@@ -13,6 +13,10 @@ feature_list = joblib.load(os.path.join(MODEL_DIR, "model_features.pkl"))  # ord
 label_encoders = joblib.load(os.path.join(MODEL_DIR, "label_encoders.pkl"))
 feature_field_map = joblib.load(os.path.join(MODEL_DIR, "feature_field_map.pkl"))
 
+def modify_func():
+    print('Test Code')
+
+
 # build metadata for template
 feature_meta = []
 for feat in feature_list:
